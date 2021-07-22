@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="myReact.js"></script>
+<script>
+    const element = myReact.createElement('div', {
+        id: 'foo'
+    }, myReact.createElement('a', null, 'bar'), myReact.createElement('b', null, '12121'))
+    myReact.render(element, document.querySelector('body'))
+</script>
+</body>
+</html>
